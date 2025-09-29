@@ -25,13 +25,13 @@
 
     .header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       margin-bottom: 20px;
     }
 
     .header img {
-      height: 60px;
+      height: 80px;
     }
 
     .student-info {
@@ -45,14 +45,22 @@
       line-height: 1.5;
     }
 
-    .student-info .promedio {
+    .promedio{
+        background: #f0f0f0;
+        border: 1px solid #000;
+    }
+
+    .promedio #promedio {
       font-size: 24px;
       font-weight: bold;
       text-align: center;
-      border: 1px solid #ccc;
       padding: 10px 20px;
-      border-radius: 5px;
-      background: #f9f9f9;
+      background: #fff;
+    }
+
+    .promedio p{
+        font-size:16px;
+        text-align: center;
     }
 
     h3 {
@@ -102,13 +110,15 @@
 <body>
   <div class="container">
     <div class="header">
-      <img src="ufps.png" alt="Logo UFPS">
-      <h2>Universidad Francisco de Paula Santander</h2>
+        <img src="ufps.png" alt="Logo UFPS">
     </div>
 
     <div class="student-info">
       <div class="datos" id="userInfo"></div>
-      <div class="promedio" id="promedio"></div>
+      <div class="promedio">
+        <p>Promedio:</p>
+        <div class="promedio" id="promedio"></div>
+      </div>
     </div>
 
     <h3>Relación de asignaturas cursadas</h3>
